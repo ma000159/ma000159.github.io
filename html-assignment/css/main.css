@@ -1,0 +1,43 @@
+/* Inheritance */
+body {
+    font-family: Arial, sans-serif;
+    font-size: 25px;
+}
+
+/* Select multiple elements */
+#main-page-header, footer {
+    background-color: violet;
+}
+
+/* Class selector */
+.site-title {
+    color: powderblue;
+}
+
+/* Id selector */
+#my-image {
+    box-shadow: 0 0 2px 1px black;
+}
+
+/* Remove bullets in hobbies list */
+.hobbies {
+    list-style-type: none;
+}
+
+/* nth-child selector */
+.hobbies li:nth-child(odd) {
+    background-color: pink;
+}
+
+a {
+    text-decoration: none;
+}
+/* background color tag is working but not the border tag isn't */
+a {
+    background-color: chartreuse;
+    border: 1px pink;
+}
+
+a:hover{
+    background-color: aquamarine;
+}
