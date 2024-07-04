@@ -1,43 +1,136 @@
-/* Inheritance */
+/* Reset some default browser styles */
+body, h1, h2, p, ul, li, form, label {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General body styling */
 body {
     font-family: Arial, sans-serif;
-    font-size: 25px;
+    background-color: #7bc613;
+    color: #c91111;
+    line-height: 1.6;
 }
 
-/* Select multiple elements */
-#main-page-header, footer {
-    background-color: violet;
+/* Header styling */
+header {
+    position: relative;
+    text-align: center;
+    color: rgb(140, 33, 33);
 }
 
-/* Class selector */
-.site-title {
-    color: powderblue;
+.header-image {
+    width: 100%;
+    height: auto;
 }
 
-/* Id selector */
-#my-image {
-    box-shadow: 0 0 2px 1px black;
+.title-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
-/* Remove bullets in hobbies list */
-.hobbies {
-    list-style-type: none;
+header h1 {
+    font-size: 3rem;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px 20px;
 }
 
-/* nth-child selector */
-.hobbies li:nth-child(odd) {
-    background-color: pink;
+/* Navigation styling */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    background: #b9c657;
+    padding: 10px 0;
 }
 
-a {
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
     text-decoration: none;
-}
-/* background color tag is working but not the border tag isn't */
-a {
-    background-color: chartreuse;
-    border: 1px pink;
+    color: rgb(93, 27, 27);
+    font-size: 1.2rem;
 }
 
-a:hover{
-    background-color: aquamarine;
+/* Main article styling */
+main {
+    padding: 20px;
+}
+
+.article-image {
+    float: left;
+    margin-right: 20px;
+    width: 300px;
+    height: auto;
+}
+
+h2 {
+    margin-bottom: 10px;
+}
+
+p {
+    text-align: justify;
+}
+
+/* Facts section styling */
+section h2 {
+    margin-top: 20px;
+}
+
+ul {
+    list-style: disc;
+    margin-left: 20px;
+}
+
+/* Contact form styling */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 10px;
+}
+
+input, textarea {
+    padding: 10px;
+    margin-top: 5px;
+    font-size: 1rem;
+    border: 1px solid #87a6a6;
+    border-radius: 5px;
+}
+
+textarea {
+    resize: vertical;
+    height: 100px;
+}
+
+button {
+    margin-top: 15px;
+    padding: 10px;
+    background-color: #153030;
+    color: rgb(82, 91, 169);
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #6d8c8c;
+}
+
+/* Footer styling */
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background: #87a6a6;
+    color: rgb(60, 24, 24);
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
